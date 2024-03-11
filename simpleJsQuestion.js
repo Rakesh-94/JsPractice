@@ -31,3 +31,14 @@
 // x = 5;
 // y = "5";
 // console.log(x == y);
+
+// Q How to find second larget value and remove first larget value in array
+
+const intArray = [2, 8, 9, 7];
+const largestValue = (arr) => {
+  firstLargestValue = Math.max(...arr);
+  index = arr.indexOf(firstLargestValue);
+  return firstLargestValue;
+};
+
+console.log(largestValue(intArray));
