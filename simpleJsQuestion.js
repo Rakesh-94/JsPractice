@@ -34,11 +34,51 @@
 
 // Q How to find second larget value and remove first larget value in array
 
-const intArray = [2, 8, 9, 7];
-const largestValue = (arr) => {
-  firstLargestValue = Math.max(...arr);
-  index = arr.indexOf(firstLargestValue);
-  return firstLargestValue;
-};
+// steps1: find Largest value from array
+// step2: find index of largest value
+// step3: Delete index from Array using splice method
+//  step4: Apply same logic that use for fine largest value
 
-console.log(largestValue(intArray));
+// const array = [1, 4, 5, 7, 8, 9];
+// const sendLargestValue = (array) => {
+//   const firstLargestValue = Math.max(...array);
+//   const largestValueIndex = array.indexOf(firstLargestValue);
+//   array.splice(largestValueIndex, 1);
+//   const secondLargestValue = Math.max(...array);
+//   return secondLargestValue;
+// };
+// console.log(sendLargestValue(array));
+
+// Q Diffrence between Filter and Find Method
+
+// => filter() method returns the matched values in an array from the collection.
+// => find() method returns the first value that matches from the collection Once it matches the value in findgins,
+// it will not check the remaining values in the array collectoin
+
+const empArr = [
+  { name: "rakesh", age: 29 },
+  { name: "pramod", age: 29 },
+  { name: "neelesh", age: 28 },
+  { name: "rohit", age: 28 },
+  { name: "anurag", age: 27 },
+];
+
+const filterItems = empArr.filter((item) => {
+  return item.age > 28;
+});
+
+console.log(filterItems);
+
+const empArrOther = [
+  { name: "rakesh", age: 29 },
+  { name: "pramod", age: 29 },
+  { name: "neelesh", age: 28 },
+  { name: "rohit", age: 28 },
+  { name: "anurag", age: 27 },
+];
+
+const filterItemsOther = empArrOther.find((item) => {
+  return item.age > 28;
+});
+
+console.log(filterItemsOther);
