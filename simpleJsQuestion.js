@@ -55,30 +55,49 @@
 // => find() method returns the first value that matches from the collection Once it matches the value in findgins,
 // it will not check the remaining values in the array collectoin
 
-const empArr = [
-  { name: "rakesh", age: 29 },
-  { name: "pramod", age: 29 },
-  { name: "neelesh", age: 28 },
-  { name: "rohit", age: 28 },
-  { name: "anurag", age: 27 },
-];
+// const empArr = [
+//   { name: "rakesh", age: 29 },
+//   { name: "pramod", age: 29 },
+//   { name: "neelesh", age: 28 },
+//   { name: "rohit", age: 28 },
+//   { name: "anurag", age: 27 },
+//   { name: "pankaj", age: 47 },
+// ];
 
-const filterItems = empArr.filter((item) => {
-  return item.age > 28;
-});
+// const filterItems = empArr.filter((item) => {
+//   return item.age > 29;
+// });
 
-console.log(filterItems);
+// console.log(filterItems);
 
-const empArrOther = [
-  { name: "rakesh", age: 29 },
-  { name: "pramod", age: 29 },
-  { name: "neelesh", age: 28 },
-  { name: "rohit", age: 28 },
-  { name: "anurag", age: 27 },
-];
+// const empArrOther = [
+//   { name: "rakesh", age: 29 },
+//   { name: "pramod", age: 29 },
+//   { name: "neelesh", age: 28 },
+//   { name: "rohit", age: 28 },
+//   { name: "anurag", age: 27 },
+// ];
 
-const filterItemsOther = empArrOther.find((item) => {
-  return item.age > 28;
-});
+// const filterItemsOther = empArrOther.find((item) => {
+//   return item.age > 28;
+// });
 
-console.log(filterItemsOther);
+// console.log(filterItemsOther);
+
+// how to find the missing number in a given interger array of 1 to 10
+
+// const arr = [1, 2, 3, 7, 8, 9, 10];
+// const missingNumber = [];
+// const minNumber = Math.min(...arr);
+// const maxNumber = Math.max(...arr);
+
+// for (let i = minNumber; i < maxNumber; i++) {
+//   if (arr.indexOf(i) < 0) {
+//     missingNumber.push(i);
+//   }
+// }
+
+// console.log(arr);
+// console.log(minNumber);
+// console.log(maxNumber);
+// console.log(missingNumber);
