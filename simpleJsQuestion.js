@@ -101,3 +101,13 @@
 // console.log(minNumber);
 // console.log(maxNumber);
 // console.log(missingNumber);
+
+// Q how to find even or odd number in a given array in javaScript
+
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// const even = arr.filter((item) => item % 2 === 0);
+// const odd = arr.filter((item) => item % 2 !== 0);
+
+// console.log(even);
+// console.log(odd);
