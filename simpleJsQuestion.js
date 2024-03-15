@@ -111,3 +111,14 @@
 
 // console.log(even);
 // console.log(odd);
+
+// how to find the sum of all elements in agiven array[] in javascript
+
+const arrNum = [1, 9, 6, 4];
+const sumOfNumver = (arr) => {
+  return arr.reduce((prev, currt) => {
+    return prev + currt;
+  });
+};
+
+console.log(sumOfNumver(arrNum));
