@@ -114,11 +114,30 @@
 
 // how to find the sum of all elements in agiven array[] in javascript
 
-const arrNum = [1, 9, 6, 4];
-const sumOfNumver = (arr) => {
-  return arr.reduce((prev, currt) => {
-    return prev + currt;
-  });
-};
+// const arrNum = [1, 9, 6, 4];
+// const sumOfNumver = (arr) => {
+//   return arr.reduce((prev, currt) => {
+//     return prev + currt;
+//   });
+// };
 
-console.log(sumOfNumver(arrNum));
+// console.log(sumOfNumver(arrNum));
+
+// how to find factorial(n!) of a given number in javascript
+
+// * The factorial of a number is the product of all number from 1 to that number
+// for example: factorial of 5 is equal to 5! = 1*2*3*4*5= 120
+// factorial of negative number is not possibale
+
+// const inputNum = prompt("please enter number");
+
+// const inputNum = 6;
+// let fact = 1;
+// if (inputNum < 0) {
+//   console.log(`Factorial of ${inputNum} is not possible`);
+// } else {
+//   for (let i = 1; i <= inputNum; i++) {
+//     fact = fact * i;
+//   }
+//   console.log(`factorial of ${inputNum} is ${fact}`);
+// }
