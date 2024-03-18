@@ -141,3 +141,42 @@
 //   }
 //   console.log(`factorial of ${inputNum} is ${fact}`);
 // }
+
+// let number = 2;
+
+// if (number == 1) {
+//   console.log(`${number} is not a prime nither a composit`);
+// } else if (number < 1) {
+//   console.log(`prime no of ${number} is not possible`);
+// } else {
+//   for (let i = 2; i < number; i++) {
+//     if (number % i == 0) {
+//       console.log(`${number} is not prime number`);
+//       break;
+//     } else {
+//       console.log(`${number} is prime number`);
+//     }
+//   }
+// }
+
+let number = 2;
+let isPrime = true;
+
+if (number == 1) {
+  console.log(`${number} is not a prime neither a composite`);
+} else if (number < 1) {
+  console.log(`Prime number for ${number} is not possible`);
+} else {
+  for (let i = 2; i < number; i++) {
+    if (number % i == 0) {
+      isPrime = false;
+      break;
+    }
+  }
+
+  if (isPrime) {
+    console.log(`${number} is a prime number`);
+  } else {
+    console.log(`${number} is not a prime number`);
+  }
+}
