@@ -183,7 +183,6 @@
 //Q how to find vowels form sting i js
 // first method
 // const vowel = "e";
-
 // if (
 //   vowel == "a" ||
 //   vowel == "e" ||
@@ -195,3 +194,18 @@
 // } else {
 //   console.log("this is not vovel");
 // }
+
+// second method
+
+// const str
+// const vowels = ["a", "e", "i", "o", "u"];
+// const countVawels = (st) => {
+//   let count = 0;
+//   for (let letter of st.toLowerCase()) {
+//     if (vowels.includes(letter)) {
+//       count++;
+//     }
+//   }
+//   return count;
+// };
+// console.log(countVawels(str));
