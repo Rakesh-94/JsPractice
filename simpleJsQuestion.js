@@ -209,3 +209,14 @@
 //   return count;
 // };
 // console.log(countVawels(str));
+
+//Q capitalize first letter of each word fo a given sentence
+
+// const str = "my name rakesh pal";
+// const arr = str.split(" ");
+
+// const mapps = arr.map((item) => item[0].toUpperCase() + item.slice(1));
+
+// const joins = mapps.join(" ");
+
+// console.log(joins);
