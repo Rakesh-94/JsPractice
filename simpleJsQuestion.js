@@ -220,3 +220,13 @@
 // const joins = mapps.join(" ");
 
 // console.log(joins);
+
+// Q how to reverse a string in javascript
+// const reversFun = (str) => {
+//   const arr = str.split("");
+//   const reversVal = arr.reverse();
+//   const strVal = reversVal.join("");
+//   return strVal;
+// };
+// const value = reversFun("rakeshpal");
+// console.log(value);
