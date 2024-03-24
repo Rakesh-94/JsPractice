@@ -230,3 +230,20 @@
 // };
 // const value = reversFun("rakeshpal");
 // console.log(value);
+
+// Q how to find palindrome in javascript
+
+// what is Palindrome
+
+// a word, verse, or sentence (such as "madam") or a number (such as 1881) that reads the same backword or forword
+
+const palindrom = (str) => {
+  const palindromeVal = str.split("").reverse().join("");
+  if (palindromeVal == str) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+console.log(palindrom("1881"));
