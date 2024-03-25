@@ -237,13 +237,27 @@
 
 // a word, verse, or sentence (such as "madam") or a number (such as 1881) that reads the same backword or forword
 
-const palindrom = (str) => {
-  const palindromeVal = str.split("").reverse().join("");
-  if (palindromeVal == str) {
-    return true;
-  } else {
-    return false;
-  }
-};
+// const palindrom = (str) => {
+//   const palindromeVal = str.split("").reverse().join("");
+//   if (palindromeVal == str) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
 
-console.log(palindrom("1881"));
+// console.log(palindrom("1881"));
+
+// Q how to swap two variable without using third variable in javascript
+
+// let a = 7;
+// let b = 8;
+// with using third variable
+// let temp = a;
+// a = b;
+// b = temp;
+// console.log(a, b);
+
+// without third variable
+// [a, b] = [b, a];
+// console.log(a, b);
