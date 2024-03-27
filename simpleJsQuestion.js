@@ -261,3 +261,24 @@
 // without third variable
 // [a, b] = [b, a];
 // console.log(a, b);
+
+//Q how to merge two arrays and short them in javascript
+
+// const arr1 = [1, 2, 3, 4, 50, 60];
+// const arr2 = [7, 8, 9, 11];
+
+// const array = arr1.concat(arr2).sort((a, b) => a - b);
+// console.log(array);
+
+// const array1 = [...arr1, ...arr2];
+// console.log(array1.sort((a, b) => a - b));
+
+//Q how to find factors of a given integer in javascript
+
+// const inter = 16;
+
+// for (let i = 0; i <= inter; i++) {
+//   if (inter % i === 0) {
+//     console.log(i);
+//   }
+// }
