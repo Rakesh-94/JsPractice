@@ -282,3 +282,28 @@
 //     console.log(i);
 //   }
 // }
+
+// Q find next seven week days
+// function getNextSevenDaysFromDate(currentDate) {
+//   var nextSevenDays = [];
+//   // Loop to get the next 7 days
+//   for (var i = 0; i < 7; i++) {
+//     var nextDate = new Date();
+//     nextDate.setDate(nextDate.getDate() + i); // Incrementing by i+1 to get next days
+//     nextSevenDays.push(nextDate.getDay());
+//   }
+//   return nextSevenDays
+
+// Q given two array, find  day according current day
+// const dayAlwaysOnFirstPosition = (data1, data2) => {
+//   const result = [];
+//   for (let i = 0; i < data1.length; i++) {
+//     for (let j = 0; j < data2.length; j++) {
+//       if (data1[i] == data2[j].dayNum) {
+//         result.push(data2[j]);
+//         continue;
+//       }
+//     }
+//   }
+//   return result;
+// };
