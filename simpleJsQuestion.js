@@ -286,13 +286,14 @@
 // Q find next seven week days
 // function getNextSevenDaysFromDate(currentDate) {
 //   var nextSevenDays = [];
-//   // Loop to get the next 7 days
 //   for (var i = 0; i < 7; i++) {
+//     console.log(i);
 //     var nextDate = new Date();
-//     nextDate.setDate(nextDate.getDate() + i); // Incrementing by i+1 to get next days
+//     nextDate.setDate(nextDate.getDate() + i);
 //     nextSevenDays.push(nextDate.getDay());
 //   }
-//   return nextSevenDays
+//   return nextSevenDays;
+// }
 
 // Q given two array, find  day according current day
 // const dayAlwaysOnFirstPosition = (data1, data2) => {
@@ -307,3 +308,18 @@
 //   }
 //   return result;
 // };
+
+// how to make calculator in javascript?
+const operator = "*";
+const num1 = 5;
+const num2 = 6;
+if (operator == "+") {
+  result = num1 + num2;
+} else if (operator == "-") {
+  result = num1 - num2;
+} else if (operator == "*") {
+  result = num1 * num2;
+} else {
+  result = num1 / num2;
+}
+console.log(`${num1}${operator}${num2} = ${result}`);
