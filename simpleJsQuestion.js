@@ -310,16 +310,41 @@
 // };
 
 // how to make calculator in javascript?
-const operator = "*";
-const num1 = 5;
-const num2 = 6;
-if (operator == "+") {
-  result = num1 + num2;
-} else if (operator == "-") {
-  result = num1 - num2;
-} else if (operator == "*") {
-  result = num1 * num2;
-} else {
-  result = num1 / num2;
-}
-console.log(`${num1}${operator}${num2} = ${result}`);
+// const operator = "*";
+// const num1 = 5;
+// const num2 = 6;
+// if (operator == "+") {
+//   result = num1 + num2;
+// } else if (operator == "-") {
+//   result = num1 - num2;
+// } else if (operator == "*") {
+//   result = num1 * num2;
+// } else {
+//   result = num1 / num2;
+// }
+// console.log(`${num1}${operator}${num2} = ${result}`);
+
+// Q how to compare two arrays are equal or not in js
+
+// const arr1 = [1, 2, 4, 5, 6];
+// const arr2 = [2, 6, 4, 5, 1];
+
+// const isArray =
+//   arr1.length == arr2.length &&
+//   arr1.every((item) => {
+//     if (arr2.indexOf(item) > -1) {
+//       return (item = [arr2.indexOf(item)]);
+//     }
+//   });
+// // console.log(values);
+// console.log(isArray);
+
+// Q how to find intersection of two arrays/sets in js
+
+// const arr1 = [2, 4, 5, 7, 8, 9, 10];
+// const arr2 = [1, 3, 5, 6, 7, 8, 11];
+// let intersection = arr1.filter((ele) => {
+//   return arr2.includes(ele);
+// });
+
+// console.log([...new Set(intersection)]);
