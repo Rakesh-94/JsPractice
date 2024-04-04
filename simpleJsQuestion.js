@@ -348,3 +348,14 @@
 // });
 
 // console.log([...new Set(intersection)]);
+
+//Q  I need a function that takes an index as input and returns a color value based on that index, similar to how getColor works.
+//  const getColor = (index) => {
+//   const data = ["#E3F2F1", "#FFF4E3", "#FFEBEE", "#EBEDFF", "#E3F2F1"];
+//   if (index > 4) {
+//     let newIndex = index % data.length;
+//     return data[newIndex];
+//   } else {
+//     return data[index];
+//   }
+// };
