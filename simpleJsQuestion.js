@@ -359,3 +359,21 @@
 //     return data[index];
 //   }
 // };
+
+// Q how to convert celsius to fahrenheit or fahrenheit to celsius
+
+// const celToFah = (cel) => {
+//   const fah = (9 / 5) * cel + 32;
+//   return fah;
+// };
+
+// const fahVale = celToFah(100);
+// console.log(fahVale);
+
+// const fahToCel = (fah) => {
+//   const cel = ((fah - 32) * 5) / 9;
+//   return cel;
+// };
+
+// const celVale = fahToCel(212);
+// console.log(celVale);
