@@ -377,3 +377,15 @@
 
 // const celVale = fahToCel(212);
 // console.log(celVale);
+
+// how to convert kilometer(km) into miles in js
+
+// kmToMiles = (numOfKm) => {
+//   const numOfMiles = numOfKm * 0.621371;
+
+//   return numOfMiles;
+// };
+
+// const miles = kmToMiles(100);
+
+// console.log(miles);
