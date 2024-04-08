@@ -389,3 +389,21 @@
 // const miles = kmToMiles(100);
 
 // console.log(miles);
+
+// how to convert first letters of a string in to uppercase in js
+
+// charAt(): to get a character at an index
+// toUpperCase():to upperCase charcter
+// Map(): to return a new array
+// slice(): to slice any character form string
+
+// const str = "my name is rakesh";
+
+// const array = str.split(" ");
+
+// const firstLetter = array.map(
+//   (item) => item.charAt(0).toUpperCase() + item.slice(1)
+// );
+
+// const newStr = firstLetter.join(" ");
+// console.log(newStr);
