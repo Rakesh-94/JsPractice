@@ -390,7 +390,7 @@
 
 // console.log(miles);
 
-// how to convert first letters of a string in to uppercase in js
+//Q how to convert first letters of a string in to uppercase in js
 
 // charAt(): to get a character at an index
 // toUpperCase():to upperCase charcter
@@ -407,3 +407,64 @@
 
 // const newStr = firstLetter.join(" ");
 // console.log(newStr);
+
+// Program to find fibonacci sequence in js
+
+//Q what is fibonacci sequence?
+
+// The fibonacci sequence is the integer sequence where the first two terms are 0 and 1.
+// after that the next term is defined as the sum of the previous two terms 0,1,1,2,3,5,8,13,21
+
+// let a = 0;
+// let b = 1;
+// for (let i = 0; i <= 10; i++) {
+//   let tepm = a + b;
+//   a = b;
+//   b = tepm;
+//   console.log(tepm);
+// }
+
+// function fibonacciSeries(n) {
+//   var fibArray = [0, 1];
+//   for (var i = 2; i < n; i++) {
+//     fibArray.push(fibArray[i - 1] + fibArray[i - 2]);
+//   }
+//   return fibArray;
+// }
+// var n = 10;
+// console.log(fibonacciSeries(n));
+
+// function fib(n) {
+//   let a = 0,
+//     b = 1,
+//     c,
+//     i;
+//   if (n == 0) return a;
+//   for (i = 2; i <= n; i++) {
+//     c = a + b;
+//     a = b;
+//     b = c;
+//   }
+//   return b;
+// }
+// let n = 9;
+// console.log(fib(n));
+
+// function fibonacci(n) {
+//   if (n <= 1) {
+//     return n;
+//   }
+//   return fibonacci(n - 1) + fibonacci(n - 2);
+// }
+
+// function fibonacciSeries(n) {
+//   var fibArray = [];
+
+//   for (var i = 0; i < n; i++) {
+//     fibArray.push(fibonacci(i));
+//   }
+
+//   return fibArray;
+// }
+// var n = 10;
+// console.log(fibonacciSeries(n));
