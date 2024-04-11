@@ -468,3 +468,35 @@
 // }
 // var n = 10;
 // console.log(fibonacciSeries(n));
+
+//@ program to print star and number patterns right triangle, pyramid and diamond shape in js
+
+// for (let i = 1; i <= 6; i++) {
+//   for (let j = 1; j <= i; j++) {
+//     console.log("*");
+//   }
+// }
+
+// Upper half of the diamond
+// for (let i = 1; i <= 6; i++) {
+//   let row = "";
+//   for (let j = 1; j <= 6 - i; j++) {
+//     row += " "; // Add spaces before the stars
+//   }
+//   for (let k = 1; k <= 2 * i - 1; k++) {
+//     row += "*"; // Add stars
+//   }
+//   console.log(row);
+// }
+
+// Lower half of the diamond
+// for (let i = 5; i >= 1; i--) {
+//   let row = "";
+//   for (let j = 1; j <= 6 - i; j++) {
+//     row += " "; // Add spaces before the stars
+//   }
+//   for (let k = 1; k <= 2 * i - 1; k++) {
+//     row += "*"; // Add stars
+//   }
+//   console.log(row);
+// }
