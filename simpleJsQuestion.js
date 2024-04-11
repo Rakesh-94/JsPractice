@@ -500,3 +500,15 @@
 //   }
 //   console.log(row);
 // }
+
+// Q program to find Number of Occurrences of a Charactor in a string in js
+// let str = "my name is rakesh";
+// let letter = "h";
+// let counter = 0;
+// for (let i = 0; i <= str.length; i++) {
+//   if (str[i] == letter) {
+//     counter++;
+//   }
+// }
+
+// console.log(`in ${str} occurrence of ${letter}= ${counter}`);
