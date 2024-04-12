@@ -512,3 +512,14 @@
 // }
 
 // console.log(`in ${str} occurrence of ${letter}= ${counter}`);
+
+// Q program to print the table of any user defined number using function in javascript
+
+// const tabel = (num) => {
+//   for (let i = 1; i <= 10; i++) {
+//     let res = i * num;
+//     console.log(res);
+//   }
+// };
+
+// tabel(20);
