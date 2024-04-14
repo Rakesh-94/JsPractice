@@ -523,3 +523,27 @@
 // };
 
 // tabel(20);
+
+// program to check armstrong number in js
+
+// what is an armstrong no number?
+// abcd.... = an+bn+cn+dn+.....
+// In the case of an armstrong Number of 3digits the sum of cubes of each digit is equal to the number
+// itself. for example,371 is an armstrong number beacause
+
+// 371 = (3+3+3)+(7+7+7)+(1+1+1)
+// 371 = 27+343+1
+
+// let num = 371;
+// let temp = num;
+// let lengthOfDigit = num.toString().length;
+// let sum = 0;
+// while (temp > 0) {
+//   let digit = temp % 10;
+//   sum += digit ** lengthOfDigit;
+
+//   temp = parseInt(temp / 10);
+// }
+// if (sum == num) {
+//   console.log(num);
+// }
