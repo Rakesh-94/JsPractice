@@ -547,3 +547,54 @@
 // if (sum == num) {
 //   console.log(num);
 // }
+
+// Q which result print firstly in console
+// console.log(1);
+// setTimeout(() => console.log(2), 1000);
+// setTimeout(() => console.log(3), 0);
+// console.log(4);
+
+// Q what is the output of this setTimeout function
+
+// setTimeout(() => {
+//   console.log(i);
+//   const i = 10;
+// }, 1000);
+
+// Q what is output of this fucntion
+
+// const count = 0;
+// function printCount() {
+//   if (count == 0) {
+//     const count = 3;
+//     console.log(count);
+//   }
+//   console.log(count);
+// }
+// printCount();
+
+// Q what is the output given belwo console
+
+// console.log(2 + "2");
+// console.log(2 - "2");
+
+// console.log("2" - 2);
+// console.log("2" + 2);
+
+// console.log(2 * "2");
+// console.log("2" * 2);
+
+// console.log(20 / "2");
+// console.log("2" / 2);
+
+// Q diffrence wtn map and forEach
+// const array = [1, 2, 3, 4, 5];
+
+// const mapMethod = array.map((item) => item * 3);
+// const forEachMethod = array.forEach(
+//   (element, ind) => (array[ind] = element * 4)
+// );
+
+// console.log(mapMethod);
+// console.log(forEachMethod);
+// console.log(array);
