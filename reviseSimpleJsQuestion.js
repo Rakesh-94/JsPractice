@@ -53,3 +53,10 @@
 
 // console.log(map1);
 // Expected output: Array [2, 8, 18, 32]
+
+const words = ["spray", "elite", "exuberant", "destruction", "present"];
+
+const result = words.filter((word) => word.length > 4);
+
+console.log(result);
+// Expected output: Array ["exuberant", "destruction", "present"]
