@@ -54,9 +54,16 @@
 // console.log(map1);
 // Expected output: Array [2, 8, 18, 32]
 
-const words = ["spray", "elite", "exuberant", "destruction", "present"];
-
-const result = words.filter((word) => word.length > 4);
-
-console.log(result);
+// const words = ["spray", "elite", "exuberant", "destruction", "present"];
+// const result = words.filter((word) => word.length > 4);
+// console.log(result);
 // Expected output: Array ["exuberant", "destruction", "present"]
+
+// Q some() method
+const array = [1, 2, 3, 4, 5];
+
+// Checks whether an element is even
+const even = (element) => element % 2 === 0;
+
+console.log(array.some(even));
+// Expected output: true
