@@ -60,10 +60,32 @@
 // Expected output: Array ["exuberant", "destruction", "present"]
 
 // Q some() method
-const array = [1, 2, 3, 4, 5];
+// const array = [1, 2, 3, 4, 5];
 
 // Checks whether an element is even
-const even = (element) => element % 2 === 0;
+// const even = (element) => element % 2 === 0;
 
-console.log(array.some(even));
+// console.log(array.some(even));
 // Expected output: true
+
+// Q slice() methods
+
+const animals = ["ant", "bison", "camel", "duck", "elephant"];
+
+// console.log(animals.slice(2));
+// Expected output: Array ["camel", "duck", "elephant"]
+
+// console.log(animals.slice(2, 4));
+// Expected output: Array ["camel", "duck"]
+
+// console.log(animals.slice(1, 5));
+// Expected output: Array ["bison", "camel", "duck", "elephant"]
+
+// console.log(animals.slice(-2));
+// Expected output: Array ["duck", "elephant"]
+
+// console.log(animals.slice(2, -1));
+// Expected output: Array ["camel", "duck"]
+
+// console.log(animals.slice());
+// Expected output: Array ["ant", "bison", "camel", "duck", "elephant"]
