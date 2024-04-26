@@ -89,3 +89,11 @@ const animals = ["ant", "bison", "camel", "duck", "elephant"];
 
 // console.log(animals.slice());
 // Expected output: Array ["ant", "bison", "camel", "duck", "elephant"]
+
+// Q reverse() method
+
+// const array1 = ["one", "two", "three"];
+// console.log("array1:", array1);
+// const reversed = array1.reverse();
+// console.log("reversed:", reversed);
+// console.log("array1:", array1);
