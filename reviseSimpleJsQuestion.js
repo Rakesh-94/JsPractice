@@ -97,28 +97,3 @@ const animals = ["ant", "bison", "camel", "duck", "elephant"];
 // const reversed = array1.reverse();
 // console.log("reversed:", reversed);
 // console.log("array1:", array1);
-
-// const markWeight = 78;
-// const markHeight = 1.69;
-
-// const jonhWeight = 92;
-// const jonhHeight = 1.95;
-
-const markWeight = 95;
-const markHeight = 1.88;
-
-const jonhWeight = 85;
-const jonhHeight = 1.76;
-
-const BMIsMark = markWeight / markHeight ** 2;
-const BMIsJonh = jonhWeight / jonhHeight ** 2;
-console.log(BMIsMark, BMIsJonh);
-
-const markHigherBMI = BMIsMark > BMIsJonh;
-
-markHigherBMI
-  ? console.log(`Mark bmi ${BMIsMark} is grather than Jonh ${BMIsJonh}`)
-  : console.log(`Jonh bmi ${BMIsJonh} is grather than mark bmi ${BMIsMark}`);
-
-console.log(typeof markHigherBMI);
-console.log(typeof "first");
