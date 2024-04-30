@@ -99,14 +99,29 @@
 // console.log("array1:", array1);
 
 // Q push() method
-const animals = ["pigs", "goats", "sheep"];
+// const animals = ["pigs", "goats", "sheep"];
 
-const count = animals.push("cows");
-console.log(count);
+// const count = animals.push("cows");
+// console.log(count);
 // Expected output: 4
-console.log(animals);
+// console.log(animals);
 // Expected output: Array ["pigs", "goats", "sheep", "cows"]
 
-animals.push("chickens", "cats", "dogs");
-console.log(animals);
+// animals.push("chickens", "cats", "dogs");
+// console.log(animals);
 // Expected output: Array ["pigs", "goats", "sheep", "cows", "chickens", "cats", "dogs"]
+
+// Q pop() method
+
+// const plants = ["broccoli", "cauliflower", "cabbage", "kale", "tomato"];
+
+// console.log(plants.pop());
+// Expected output: "tomato"
+
+// console.log(plants);
+// Expected output: Array ["broccoli", "cauliflower", "cabbage", "kale"]
+
+// plants.pop();
+
+// console.log(plants);
+// Expected output: Array ["broccoli", "cauliflower", "cabbage"]
