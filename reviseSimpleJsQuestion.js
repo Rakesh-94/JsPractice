@@ -70,7 +70,7 @@
 
 // Q slice() methods
 
-const animals = ["ant", "bison", "camel", "duck", "elephant"];
+// const animals = ["ant", "bison", "camel", "duck", "elephant"];
 
 // console.log(animals.slice(2));
 // Expected output: Array ["camel", "duck", "elephant"]
@@ -97,3 +97,16 @@ const animals = ["ant", "bison", "camel", "duck", "elephant"];
 // const reversed = array1.reverse();
 // console.log("reversed:", reversed);
 // console.log("array1:", array1);
+
+// Q push() method
+const animals = ["pigs", "goats", "sheep"];
+
+const count = animals.push("cows");
+console.log(count);
+// Expected output: 4
+console.log(animals);
+// Expected output: Array ["pigs", "goats", "sheep", "cows"]
+
+animals.push("chickens", "cats", "dogs");
+console.log(animals);
+// Expected output: Array ["pigs", "goats", "sheep", "cows", "chickens", "cats", "dogs"]
