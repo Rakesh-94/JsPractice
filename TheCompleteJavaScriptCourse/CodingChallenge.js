@@ -51,17 +51,17 @@
 
 // ***** solving start *****
 
-const markWeight = 95;
-const markHeight = 1.88;
+// const markWeight = 95;
+// const markHeight = 1.88;
 
-const jonhWeight = 85;
-const jonhHeight = 1.76;
+// const jonhWeight = 85;
+// const jonhHeight = 1.76;
 
-const BMIsMark = markWeight / markHeight ** 2;
-const BMIsJonh = jonhWeight / jonhHeight ** 2;
-console.log(BMIsMark, BMIsJonh);
+// const BMIsMark = markWeight / markHeight ** 2;
+// const BMIsJonh = jonhWeight / jonhHeight ** 2;
+// console.log(BMIsMark, BMIsJonh);
 
-const markHigherBMI = BMIsMark < BMIsJonh;
+// const markHigherBMI = BMIsMark < BMIsJonh;
 
 // if (markHigherBMI) {
 //   console.log("Mark's BMI is higher than John's!");
@@ -79,4 +79,75 @@ const markHigherBMI = BMIsMark < BMIsJonh;
 //   ? console.log(`Mark bmi ${BMIsMark} is grather than Jonh ${BMIsJonh}`)
 //   : console.log(`Jonh bmi ${BMIsJonh} is grather than mark bmi ${BMIsMark}`);
 
+// ***** solving End *****
+
+// Coding Challenge #3
+// There are two gymnastics teams, Dolphins and Koalas. They compete against each other 3 times. The winner with the highest average score wins a trophy!
+// Your tasks:
+// 1. Calculate the average score for each team,using the test data below
+// 2. Comparetheteam'saveragescorestodeterminethewinnerofthecompetition,
+// and print it to the console. Don't forget that there can be a draw, so test for that
+// as well (draw means they have the same average score)
+// 3. Bonus1:Includearequirementforaminimumscoreof100.Withthisrule,a
+// team only wins if it has a higher score than the other team, and the same time a score of at least 100 points. Hint: Use a logical operator to test for minimum score, as well as multiple else-if blocks 😉
+// 4. Bonus2:Minimumscorealsoappliestoadraw!Soadrawonlyhappenswhen both teams have the same score and both have a score greater or equal 100 points. Otherwise, no team wins the trophy
+// Test data:
+// § Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
+// § Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123 § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
+// GOOD LUCK 😀
+
+// ***** solving start *****
+// data1
+// FirstTime
+let dolphinsFirstMatchScore = 96;
+let koalasFirstMatchScore = 88;
+
+// SecondTime
+let dolphinsSecondMatchScore = 108;
+let koalasSecondMatchScore = 91;
+
+// ThirdTime
+let dolphinsThirdMatchScore = 89;
+let koalasThirdMatchScore = 110;
+
+//Q-1. Calculate the average score for each team,using the test data below
+
+const AverageScoreOfDolphinsTeam =
+  (dolphinsFirstMatchScore +
+    dolphinsSecondMatchScore +
+    dolphinsThirdMatchScore) /
+  3;
+console.log(AverageScoreOfDolphinsTeam);
+
+const AverageScoreOfKoalasTeam =
+  (koalasFirstMatchScore + koalasSecondMatchScore + koalasThirdMatchScore) / 3;
+console.log(AverageScoreOfKoalasTeam);
+
+//Q-2. Comparetheteam'saveragescorestodeterminethewinnerofthecompetition,
+// and print it to the console. Don't forget that there can be a draw, so test for that
+// as well (draw means they have the same average score)
+
+if (AverageScoreOfDolphinsTeam == AverageScoreOfKoalasTeam) {
+  console.log("No one is winner match draw");
+} else if (AverageScoreOfDolphinsTeam > AverageScoreOfKoalasTeam) {
+  console.log("The winner is Dolphins team");
+} else {
+  console.log("The winner is Koalas team");
+}
+
+// Q-3. Bonus1:Includearequirementforaminimumscoreof100.Withthisrule,a
+// team only wins if it has a higher score than the other team, and the same time a score of at least 100 points. Hint: Use a logical operator to test for minimum score, as well as multiple else-if blocks 😉
+
+// databonus1
+// FirstTime
+let bonusOneDolphinsFirstMatchScore = 97;
+let bonusOneKoalasFirstMatchScore = 109;
+
+// SecondTime
+let bonusOneDolphinsSecondMatchScore = 112;
+let bonusOneKoalasSecondMatchScore = 95;
+
+// ThirdTime
+let bonusOneDolphinsThirdMatchScore = 101;
+let bonusOneKoalasThirdMatchScore = 123;
 // ***** solving End *****
