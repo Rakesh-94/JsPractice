@@ -99,43 +99,43 @@
 // ***** solving start *****
 // data1
 // FirstTime
-let dolphinsFirstMatchScore = 96;
-let koalasFirstMatchScore = 88;
+// let dolphinsFirstMatchScore = 96;
+// let koalasFirstMatchScore = 88;
 
 // SecondTime
-let dolphinsSecondMatchScore = 108;
-let koalasSecondMatchScore = 91;
+// let dolphinsSecondMatchScore = 108;
+// let koalasSecondMatchScore = 91;
 
 // ThirdTime
-let dolphinsThirdMatchScore = 89;
-let koalasThirdMatchScore = 110;
+// let dolphinsThirdMatchScore = 89;
+// let koalasThirdMatchScore = 110;
 
 //Q-1. Calculate the average score for each team,using the test data below
 
-const AverageScoreOfDolphinsTeam =
-  (dolphinsFirstMatchScore +
-    dolphinsSecondMatchScore +
-    dolphinsThirdMatchScore) /
-  3;
-console.log(AverageScoreOfDolphinsTeam);
+// const AverageScoreOfDolphinsTeam =
+//   (dolphinsFirstMatchScore +
+//     dolphinsSecondMatchScore +
+//     dolphinsThirdMatchScore) /
+//   3;
+// console.log(AverageScoreOfDolphinsTeam);
 
-const AverageScoreOfKoalasTeam =
-  (koalasFirstMatchScore + koalasSecondMatchScore + koalasThirdMatchScore) / 3;
-console.log(AverageScoreOfKoalasTeam);
+// const AverageScoreOfKoalasTeam =
+//   (koalasFirstMatchScore + koalasSecondMatchScore + koalasThirdMatchScore) / 3;
+// console.log(AverageScoreOfKoalasTeam);
 
 //Q-2. Comparetheteam'saveragescorestodeterminethewinnerofthecompetition,
 // and print it to the console. Don't forget that there can be a draw, so test for that
 // as well (draw means they have the same average score)
 
-if (AverageScoreOfDolphinsTeam == AverageScoreOfKoalasTeam) {
-  console.log("No one is winner match draw");
-} else if (AverageScoreOfDolphinsTeam > AverageScoreOfKoalasTeam) {
-  console.log("The winner is Dolphins team");
-} else {
-  console.log("The winner is Koalas team");
-}
+// if (AverageScoreOfDolphinsTeam == AverageScoreOfKoalasTeam) {
+//   console.log("No one is winner match draw");
+// } else if (AverageScoreOfDolphinsTeam > AverageScoreOfKoalasTeam) {
+//   console.log("The winner is Dolphins team");
+// } else {
+//   console.log("The winner is Koalas team");
+// }
 
-// Q-3. Bonus1:Includearequirementforaminimumscoreof100.Withthisrule,a
+// Q-3. Bonus1:Include a requirement for a minimum score of 100.With this rule, a
 // team only wins if it has a higher score than the other team, and the same time a score of at least 100 points. Hint: Use a logical operator to test for minimum score, as well as multiple else-if blocks 😉
 
 // databonus1
@@ -150,4 +150,27 @@ let bonusOneKoalasSecondMatchScore = 95;
 // ThirdTime
 let bonusOneDolphinsThirdMatchScore = 101;
 let bonusOneKoalasThirdMatchScore = 123;
+
+const AverageScoreOfDolphinsTeamBonus =
+  bonusOneDolphinsFirstMatchScore +
+  bonusOneDolphinsSecondMatchScore +
+  bonusOneDolphinsThirdMatchScore;
+
+const AverageScoreOfKoalasTeamBonus =
+  bonusOneKoalasFirstMatchScore +
+  bonusOneKoalasSecondMatchScore +
+  bonusOneKoalasThirdMatchScore;
+
+const winner =
+  AverageScoreOfDolphinsTeamBonus > AverageScoreOfKoalasTeamBonus
+    ? console.log("winner")
+    : console.log("loser");
+
+bonusOneDolphinsThirdMatchScore +
+  bonusOneDolphinsSecondMatchScore +
+  bonusOneDolphinsThirdMatchScore >
+100
+  ? console.log(winner)
+  : console.log("score lessThan 100");
+
 // ***** solving End *****
