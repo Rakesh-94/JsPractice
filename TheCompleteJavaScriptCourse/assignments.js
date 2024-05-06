@@ -229,24 +229,61 @@
 // country that speaks english, has less than 50 million people and is not an
 // island.
 
-const country = "India";
-const language = "english";
-const isIsland = false;
-const population = 50;
+// const country = "India";
+// const language = "English";
+// const isIsland = false;
+// const population = 1450;
 
 // 3. WriteanifstatementtohelpSarahfigureoutifyourcountryisrightforher.
 // You will need to write a condition that accounts for all of Sarah's criteria. Take
 // your time with this, and check part of the solution if necessary.
-if (country == "India" && language == "english") {
-  console.log(
-    ` ${country} is a country which has also ${language} language, it is right place to live for sarah`
-  );
-} else {
-  console.log("it is not for sarah");
-}
+// if (country == "India" && language == "English") {
+//   console.log(
+//     ` ${country} is a country which has also ${language} language, it is right place to live for sarah`
+//   );
+// } else {
+//   console.log("it is not for sarah");
+// }
 // 4. Ifyoursistherightcountry,logastringlikethis:'YoushouldliveinPortugal:)'.If
 // not, log 'Portugal does not meet your criteria :('
+
+// const country = "India";
+// const language = "Hindi";
+// const isIsland = false;
+// const population = 1450;
+
+// if (country == "India" && language == "english") {
+//   console.log(`You should live in india`);
+// } else {
+//   console.log("Indai does not meet your criteria");
+// }
+
 // 5. Probablyyourcountrydoesnotmeetallthecriteria.Sogobackandtemporarily
 // change some variables in order to make the condition true (unless you live in Canada :D)
+
+// const country = "India";
+// const language = "English";
+// const isIsland = false;
+// const population = 50;
+// if (
+//   country == "India" &&
+//   language == "English" &&
+//   population == 50 &&
+//   isIsland == false
+// ) {
+//   console.log(`You should live in india`);
+// } else {
+//   console.log("India does not meet your criteria");
+// }
+// ***** solving End *****
+
+// ***** solving Start *****
+// LECTURE: The switch Statement
+// 1. Useaswitchstatementtologthefollowingstringforthegiven'language': chinese or mandarin: 'MOST number of native speakers!'
+// spanish: '2nd place in number of native speakers'
+// english: '3rd place'
+// hindi: 'Number 4'
+// arabic: '5th most spoken language'
+// for all other simply log 'Great language too :D'
 
 // ***** solving End *****
