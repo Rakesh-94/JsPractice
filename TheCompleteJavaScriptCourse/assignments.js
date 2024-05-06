@@ -307,4 +307,42 @@
 //   default:
 //     console.log(`Great language too :${language}`);
 // }
+
+// ***** solving End *****
+
+// ***** solving Start *****
+
+// LECTURE: The Conditional (Ternary) Operator
+// 1. Ifyourcountry'spopulationisgreaterthan33million,usetheternaryoperator to log a string like this to the console: 'Portugal's population is above average'. Otherwise, simply log 'Portugal's population is below average'. Notice how only one word changes between these two sentences!
+
+// const papulation = 1450;
+// const papulation = 14;
+
+// papulation >= 33
+//   ? console.log(`india's population is above average`)
+//   : console.log(` india's population is below average`);
+// 2. Aftercheckingtheresult,changethepopulationtemporarilyto13andthento 130. See the different results, and set the population back to original
+
+const arr = [1, 2, 3, [4, [5, 6, 8]], 7, 35];
+// o/p = [1,2,3,4,5,6,8,7,35]
+
+for (let i = 0; i < arr.length; i++) {
+  let newArray = [];
+  console.log("p", newArray);
+  if (Array.isArray(arr[i])) {
+    let indexItem = arr[i];
+    for (let j = 0; j < indexItem.length; j++) {}
+  } else {
+    newArray[i] = arr[i];
+  }
+  console.log("p", newArray);
+
+  // const indexItem = i == 3 ? arr[i] : arr[i];
+  //   console.log(indexItem);
+  //   for (let j = 0; j < arr[3].length; j++) {
+  //     console.log(`${i} to ${arr[3][j]}`);
+  //   }
+  //   console.log(`indexItem`, indexItem);
+  //   console.log(i.length);
+}
 // ***** solving End *****
