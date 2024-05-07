@@ -1,13 +1,13 @@
 // JavaScript Fundamentals – Part 1 LECTURE: Values and Variables
-// 1. Declarevariablescalled'country','continent'and'population'and assign their values according to your own country (population in millions)
+// 1. Declare variables called 'country' , 'continent' and 'population' and assign their values according to your own country (population in millions)
 
 // ***** solving Start *****
 // let country, continent, population;
 // country = "india";
 // continent = "Asia";
-// population = "13M";
+// population = "1450M";
 
-// 2. Logtheirvaluestotheconsole
+// 2. Log their values to the console
 
 // console.log("country", country);
 // console.log("continent", continent);
@@ -18,11 +18,11 @@
 // ***** solving Start *****
 
 // LECTURE: Data Types
-// 1. Declareavariablecalled'isIsland'andsetitsvalueaccordingtoyour country. The variable should hold a Boolean value. Also declare a variable 'language', but don't assign it any value yet
+// 1. Declare a variable called 'isIsland' and set its value according to your country. The variable should hold a Boolean value. Also declare a variable 'language', but don't assign it any value yet
 // const isIsland = false;
 // let language;
 
-// 2. Logthetypesof'isIsland','population','country'and'language' to the console
+// 2. Log the types of 'isIsland','population','country' and 'language' to the console
 
 // console.log(typeof isIsland);
 // console.log(typeof population);
@@ -33,38 +33,35 @@
 // ***** solving Start *****
 
 // LECTURE: let, const and var
-// 1. Setthevalueof'language'tothelanguagespokenwhereyoulive(some countries have multiple languages, but just choose one)
+// 1. Set the value of 'language' to the language spoken where you live (some countries have multiple languages, but just choose one)
 // language = "Hindi";
 
-// 2. Thinkaboutwhichvariablesshouldbeconstvariables(whichvalueswillnever change, and which might change?). Then, change these variables to const.
-// const population = "13M";
-// console.log(population);
+// 2. Think about which variables should be const variables (which values will never change, and which might change?). Then, change these variables to const.
+// const country = "Portugal";
+// const continent = "Europe";
+// const isIsland = false;
 
-// 3. Trytochangeoneofthechangedvariablesnow,andobservewhathappens
-// population = "14M";
-// console.log(population);
+// 3. Try to change one of the changed variables now, and observe what happens
+// isIsland = true;
+// console.log(isIsland);
 // ***** solving End *****
 
 // ***** solving Start *****
 
 // LECTURE: Basic Operators
-// 1. Ifyourcountrysplitinhalf,andeachhalfwouldcontainhalfthepopulation, then how many people would live in each half?
-// const northIndia = "890M";
-// const southIndia = "500M";
-// console.log("northIndia", northIndia);
-// console.log("southIndia", southIndia);
+// 1. If your country split in half,and each half would contain half the population, then how many people would live in each half?
+// const population = "1450M";
+// console.log(population / 2);
 
-// 2. Increasethepopulationofyourcountryby1andlogtheresulttotheconsole
-// const northIndia = 890;
-// const southIndia = 500;
-// console.log("northIndia", northIndia + 1);
-// console.log("southIndia", southIndia + 1);
-// 3. Finlandhasapopulationof6million.Doesyourcountryhavemorepeoplethan
+// 2. Increase the population of your country by 1 and log the result to the console
+// const population = 1450;
+// population++;
+// 3. Finland has a population of 6 million. Does your country have more people than
 // Finland?
 // const india = 1500;
-// const finland = 5;
+// const finland = 6;
 // india > finland ? console.log("india has more peaple than finlad", india) : console.log("finland", finland);
-// 4. Theaveragepopulationofacountryis33millionpeople.Doesyourcountry
+// 4. The average population of a country is 33million people. Does your country
 // have less people than the average country?
 
 // const aCountry = 33;
@@ -73,11 +70,13 @@
 // const isGrater = india > aCountry ? "Yes" : "No";
 // console.log("isGrater", isGrater);
 
-// 5. Basedonthevariablesyoucreated,createanewvariable'description'
+// 5. Based on the variables you created, create a new variable 'description'
 // which contains a string with this format: 'Portugal is in Europe, and its 11 million people speak portuguese'
-
-// const description =
-//   "Portugal is in Europe, and its 11 million people speak portuguese";
+// const country = "india";
+// const papulation = 1100;
+// const language = "hindi";
+// const continent = "asia";
+// const description = `${country} is in ${continent}, and its ${papulation} million people speak ${language}`;
 // console.log(description);
 
 // ***** solving End *****
@@ -87,7 +86,7 @@
 // LECTURE: Strings and Template Literals
 // 1. Recreate the 'description' variable from the last assignment, this time using the template literal syntax
 
-// const description = `Portugal is in Europe, and its 11 million people speak portuguese`;
+// const description = `${country} is in ${continent}, and its ${population} million people speak ${language}`;;
 // console.log(description);
 
 // ***** solving End *****
@@ -100,20 +99,25 @@
 
 // const india = 1500;
 // if (india > aCountry) {
-//   console.log(`india's population is above average`);
+//   console.log(`${india} population is above average`);
 // } else {
-//   console.log(`india's population is 1510 million below average`);
+//   console.log(`${india} population is 1510 million below average`);
 // }
 // 2. Aftercheckingtheresult,changethepopulationtemporarilyto13andthento 130. See the different results, and set the population back to original
 
-// const aCountry = 33;
-// // const india = 13;
-// const india = 130;
+// const aCountrypopu = 33;
+// // const indiapopu = 13;
+// const indiapopu = 130;
+// const country = "india";
 
-// if (india > aCountry) {
-//   console.log(`india's population is above the average`);
+// if (indiapopu > aCountrypopu) {
+//   console.log(`${country} population is above the average`);
 // } else {
-//   console.log(`india's population is 13 million below the average`);
+//   console.log(
+//     `${country} population is ${
+//       aCountrypopu - indiapopu
+//     } million below the average`
+//   );
 // }
 
 // ***** solving End *****
@@ -127,13 +131,14 @@
 //      '123' < 57; => false
 //      5 + 6 + '4' + 9 - 4 - 2; =>1143
 
-// 2. Executetheoperationstocheckifyouwereright
+// 2. Execute the operations to check if you were right
 
-// console.log("9" - "5");
+// console.log(9 - "5");
 // console.log("19" - "13" + "17");
 // console.log("19" - "13" + 17);
-// console.log(123 < "57");
+// console.log("123" > 57);
 // console.log(5 + 6 + "4" + 9 - 4 - 2);
+
 // ***** solving End *****
 
 // ***** solving Start *****
@@ -146,9 +151,9 @@
 // );
 // console.log(numNeighbours);
 
-// 2. Ifthereisonly1neighbour,logtotheconsole'Only1border!'(uselooseequality == for now)
-// const numNeighbours = prompt(
-//   "How many neighbour countries does your country have?"
+// 2. If the reisonly1neighbour,logtotheconsole'Only1border!'(uselooseequality == for now)
+// const numNeighbours = Number(
+//   prompt("How many neighbour countries does your country have?")
 // );
 // if (numNeighbours == 1) {
 //   console.log("Only1border!");
@@ -237,7 +242,7 @@
 // 3. WriteanifstatementtohelpSarahfigureoutifyourcountryisrightforher.
 // You will need to write a condition that accounts for all of Sarah's criteria. Take
 // your time with this, and check part of the solution if necessary.
-// if (country == "India" && language == "English") {
+// if (country == "India" && language == "English" && !isIsland) {
 //   console.log(
 //     ` ${country} is a country which has also ${language} language, it is right place to live for sarah`
 //   );
@@ -321,28 +326,64 @@
 // papulation >= 33
 //   ? console.log(`india's population is above average`)
 //   : console.log(` india's population is below average`);
+
 // 2. Aftercheckingtheresult,changethepopulationtemporarilyto13andthento 130. See the different results, and set the population back to original
+// const country = "india";
+// const papulation = 13;
+// const papulation = 130;
 
-const arr = [1, 2, 3, [4, [5, 6, 8]], 7, 35];
-// o/p = [1,2,3,4,5,6,8,7,35]
+// console.log(
+//   `${country}'s population is ${papulation >= 33 ? "above" : "below"} average`
+// );
 
-for (let i = 0; i < arr.length; i++) {
-  let newArray = [];
-  console.log("p", newArray);
-  if (Array.isArray(arr[i])) {
-    let indexItem = arr[i];
-    for (let j = 0; j < indexItem.length; j++) {}
-  } else {
-    newArray[i] = arr[i];
-  }
-  console.log("p", newArray);
+// ***** solving End *****
 
-  // const indexItem = i == 3 ? arr[i] : arr[i];
-  //   console.log(indexItem);
-  //   for (let j = 0; j < arr[3].length; j++) {
-  //     console.log(`${i} to ${arr[3][j]}`);
-  //   }
-  //   console.log(`indexItem`, indexItem);
-  //   console.log(i.length);
+// JavaScript Fundamentals – Part 2
+// Note: Please start Part 2 from scratch and comment out all the code from Part 1.
+
+// ***** solving Start *****
+
+// LECTURE: Functions
+// 1. Writeafunctioncalled'describeCountry'whichtakesthreeparameters: 'country', 'population' and 'capitalCity'. Based on this input, the function returns a string with this format: 'Finland has 6 million people and its capital city is Helsinki'
+
+// function describeCountry(country, population, capitalCity) {
+//   return `${country} has ${population} million people and its capital city is ${capitalCity}`;
+// }
+
+// const country = "india";
+// const population = 1450;
+// const capitalCity = "delhi";
+
+// const describeLog = describeCountry(country, population, capitalCity);
+// console.log(describeLog);
+
+// 2. Callthisfunction3times,withinputdatafor3differentcountries.Storethe returned values in 3 different variables, and log them to the console
+
+// const india = describeCountry("india", 1450, "delhi");
+
+// const pakistan = describeCountry("pakistan", 242, "Islabambad");
+
+// const china = describeCountry("china", 1600, "beijing");
+
+// console.log(india, pakistan, china);
+
+// ***** solving End *****
+
+// ***** solving Start *****
+
+// LECTURE: Function Declarations vs. Expressions
+// 1. Theworldpopulationis7900millionpeople.Createafunctiondeclaration called 'percentageOfWorld1' which receives a 'population' value, and returns the percentage of the world population that the given population represents. For example, China has 1441 million people, so it's about 18.2% of the world population
+
+function percentageOfWorld1(countryPapulation) {
+  let percentages = (countryPapulation / 7900) * 100;
+  return percentages;
 }
+
+const populationPersentage = percentageOfWorld1(1441);
+console.log(populationPersentage);
+
+// 2. Tocalculatethepercentage,dividethegiven'population'valueby7900 and then multiply by 100
+// 3. Call'percentageOfWorld1'for3populationsofcountriesofyourchoice, store the results into variables, and log them to the console
+// 4. Createafunctionexpressionwhichdoestheexactsamething,called 'percentageOfWorld2', and also call it with 3 country populations (can be the same populations)
+
 // ***** solving End *****
