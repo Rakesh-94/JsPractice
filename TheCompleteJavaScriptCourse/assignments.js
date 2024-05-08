@@ -354,7 +354,7 @@
 // const population = 1450;
 // const capitalCity = "delhi";
 
-// const describeLog = describeCountry(country, population, capitalCity);
+// const describeLog = describeCountry("india", 1450, "delhi");
 // console.log(describeLog);
 
 // 2. Callthisfunction3times,withinputdatafor3differentcountries.Storethe returned values in 3 different variables, and log them to the console
@@ -372,18 +372,171 @@
 // ***** solving Start *****
 
 // LECTURE: Function Declarations vs. Expressions
+
 // 1. Theworldpopulationis7900millionpeople.Createafunctiondeclaration called 'percentageOfWorld1' which receives a 'population' value, and returns the percentage of the world population that the given population represents. For example, China has 1441 million people, so it's about 18.2% of the world population
 
-function percentageOfWorld1(countryPapulation) {
-  let percentages = (countryPapulation / 7900) * 100;
-  return percentages;
-}
-
-const populationPersentage = percentageOfWorld1(1441);
-console.log(populationPersentage);
+// function percentageOfWorld1(countryPapulation) {
+//   return (countryPapulation / 7900) * 100;
+// }
 
 // 2. Tocalculatethepercentage,dividethegiven'population'valueby7900 and then multiply by 100
+// const population = 1450;
+// Tocalculatethepercentage = (population / 7900) * 100;
+
+// const percentageOfWorld2
 // 3. Call'percentageOfWorld1'for3populationsofcountriesofyourchoice, store the results into variables, and log them to the console
+
+// const populationPersentageIndia = percentageOfWorld1(1450);
+// const populationPersentageChina = percentageOfWorld1(1600);
+// const populationPersentagePakistan = percentageOfWorld1(280);
+
+// console.log(
+//   populationPersentageIndia,
+//   populationPersentageChina,
+//   populationPersentagePakistan
+// );
 // 4. Createafunctionexpressionwhichdoestheexactsamething,called 'percentageOfWorld2', and also call it with 3 country populations (can be the same populations)
+// const percentageOfWorld2 = function(papulation){
+//   return (papulation / 7900) * 100;
+// };
+
+// const populationPersentageIndia = percentageOfWorld2(1450);
+// const populationPersentageChina = percentageOfWorld2(1600);
+// const populationPersentagePakistan = percentageOfWorld2(280);
+
+// console.log(
+//   populationPersentageIndia,
+//   populationPersentageChina,
+//   populationPersentagePakistan
+// );
+
+// ***** solving End *****
+
+// ***** solving Start *****
+
+// LECTURE: Arrow Functions
+// 1. Recreatethelastassignment,butthistimecreateanarrowfunctioncalled
+//    'percentageOfWorld3'
+
+// const percentageOfWorld3 = (population) => {
+//   return (population / 7900) * 100;
+// };
+
+// const populationPersentageIndia = percentageOfWorld3(1450);
+// const populationPersentageChina = percentageOfWorld3(1600);
+// const populationPersentagePakistan = percentageOfWorld3(280);
+
+// console.log(
+//   populationPersentageIndia,
+//   populationPersentageChina,
+//   populationPersentagePakistan
+// );
+
+// ***** solving End *****
+
+// ***** solving Start *****
+// LECTURE: Functions Calling Other Functions
+// 1. Createafunctioncalled'describePopulation'.Usethefunctiontypeyou like the most. This function takes in two arguments: 'country' and 'population', and returns a string like this: 'China has 1441 million people, which is about 18.2% of the world.'
+// 2. Tocalculatethepercentage,'describePopulation'callthe 'percentageOfWorld1' you created earlier
+// 3. Call'describePopulation'withdatafor3countriesofyourchoice
+
+// function percentageOfWorld1(countryPapulation) {
+//   return (countryPapulation / 7900) * 100;
+// }
+
+// const describePopulation = function (country, population) {
+//   const populationPersentage = percentageOfWorld1(population);
+//   const description = `${country} has ${population} million people, which is about ${populationPersentage.toFixed(
+//     2
+//   )} % of the world.`;
+//   console.log(description);
+// };
+
+// describePopulation("india", 1450);
+// describePopulation("pakistan", 220);
+// describePopulation("bangladesh", 170);
+
+// ***** solving End *****
+
+// ***** solving Start *****
+
+// LECTURE: Introduction to Arrays
+// 1. Createanarraycontaining4populationvaluesof4countriesofyourchoice. You may use the values you have been using previously. Store this array into a variable called 'populations'
+// const populations = [1500, 250, 110, 200];
+
+// 2. Logtotheconsolewhetherthearrayhas4elementsornot(trueorfalse)
+// console.log(populations.length === 4);
+
+// 3. Createanarraycalled'percentages'containingthepercentagesofthe
+// world population for these 4 population values. Use the function 'percentageOfWorld1' that you created earlier to compute the 4 percentage values
+// function percentageOfWorld1(countryPapulation) {
+//   return (countryPapulation / 7900) * 100;
+// }
+// const percentages = [
+//   percentageOfWorld1(populations[0]),
+//   percentageOfWorld1(populations[1]),
+//   percentageOfWorld1(populations[2]),
+//   percentageOfWorld1(populations[3]),
+// ];
+// console.log(percentages);
+
+// ***** solving End *****
+
+// ***** solving Start *****
+// LECTURE: Basic Array Operations (Methods)
+// 1. Createanarraycontainingalltheneighbouringcountriesofacountryofyour choice. Choose a country which has at least 2 or 3 neighbours. Store the array into a variable called 'neighbours'
+const neighbours = [
+  "China",
+  "Afghanistan",
+  "Pakistan",
+  "SriLanka",
+  "Bangladesh",
+  "Myanmar",
+  "Bhutan",
+  "Nepal",
+];
+// 2. Atsomepoint,anewcountrycalled'Utopia'iscreatedintheneighbourhoodof your selected country. So add it to the end of the 'neighbours' array
+neighbours.push("Utopia");
+
+// 3. Unfortunately,aftersometime,thenewcountryisdissolved.Soremoveitfrom the end of the array
+neighbours.pop("Utopia");
+
+// 4. Ifthe'neighbours'arraydoesnotincludethecountry‘Germany’,logtothe console: 'Probably not a central European country :D'
+if (!neighbours.includes("Germany")) {
+  console.log(`Probably not a central European country :D`);
+}
+// 5. Changethenameofoneofyourneighbouringcountries.Todothat,findthe index of the country in the 'neighbours' array, and then use that index to change the array at that index position. For example, you can search for 'Sweden' in the array, and then replace it with 'Republic of Sweden'.
+neighbours[neighbours.indexOf("Pakistan")] = "Pak";
+
+console.log(neighbours);
+
+// ***** solving End *****
+
+// ***** solving Start *****
+// LECTURE: Introduction to Objects
+// 1. Createanobjectcalled'myCountry'foracountryofyourchoice,containing properties 'country', 'capital', 'language', 'population' and 'neighbours' (an array like we used in previous assignments)
+let myCountry = {
+  country: "india",
+  capital: "NewDelhi",
+  language: "Hindi",
+  population: "1500M",
+  neighbours: [
+    "China",
+    "Afghanistan",
+    "Pakistan",
+    "SriLanka",
+    "Bangladesh",
+    "Myanmar",
+    "Bhutan",
+    "Nepal",
+  ],
+};
+console.log(myCountry);
+// ***** solving End *****
+
+// ***** solving Start *****
+// LECTURE: Dot vs. Bracket Notation
+// 1. Usingtheobjectfromthepreviousassignment,logastringlikethistothe console: 'Finland has 6 million finnish-speaking people, 3 neighbouring countries and a capital called Helsinki.'
+// 2. Increasethecountry'spopulationbytwomillionusingdotnotation,andthen decrease it by two million using brackets notation.
 
 // ***** solving End *****
