@@ -485,58 +485,212 @@
 // ***** solving Start *****
 // LECTURE: Basic Array Operations (Methods)
 // 1. Createanarraycontainingalltheneighbouringcountriesofacountryofyour choice. Choose a country which has at least 2 or 3 neighbours. Store the array into a variable called 'neighbours'
-const neighbours = [
-  "China",
-  "Afghanistan",
-  "Pakistan",
-  "SriLanka",
-  "Bangladesh",
-  "Myanmar",
-  "Bhutan",
-  "Nepal",
-];
+// const neighbours = [
+//   "China",
+//   "Afghanistan",
+//   "Pakistan",
+//   "SriLanka",
+//   "Bangladesh",
+//   "Myanmar",
+//   "Bhutan",
+//   "Nepal",
+// ];
 // 2. Atsomepoint,anewcountrycalled'Utopia'iscreatedintheneighbourhoodof your selected country. So add it to the end of the 'neighbours' array
-neighbours.push("Utopia");
+// neighbours.push("Utopia");
 
 // 3. Unfortunately,aftersometime,thenewcountryisdissolved.Soremoveitfrom the end of the array
-neighbours.pop("Utopia");
+// neighbours.pop("Utopia");
 
 // 4. Ifthe'neighbours'arraydoesnotincludethecountry‘Germany’,logtothe console: 'Probably not a central European country :D'
-if (!neighbours.includes("Germany")) {
-  console.log(`Probably not a central European country :D`);
-}
+// if (!neighbours.includes("Germany")) {
+//   console.log(`Probably not a central European country :D`);
+// }
 // 5. Changethenameofoneofyourneighbouringcountries.Todothat,findthe index of the country in the 'neighbours' array, and then use that index to change the array at that index position. For example, you can search for 'Sweden' in the array, and then replace it with 'Republic of Sweden'.
-neighbours[neighbours.indexOf("Pakistan")] = "Pak";
+// neighbours[neighbours.indexOf("Pakistan")] = "Pak";
 
-console.log(neighbours);
+// console.log(neighbours);
 
 // ***** solving End *****
 
 // ***** solving Start *****
 // LECTURE: Introduction to Objects
 // 1. Createanobjectcalled'myCountry'foracountryofyourchoice,containing properties 'country', 'capital', 'language', 'population' and 'neighbours' (an array like we used in previous assignments)
-let myCountry = {
-  country: "india",
-  capital: "NewDelhi",
-  language: "Hindi",
-  population: "1500M",
-  neighbours: [
-    "China",
-    "Afghanistan",
-    "Pakistan",
-    "SriLanka",
-    "Bangladesh",
-    "Myanmar",
-    "Bhutan",
-    "Nepal",
-  ],
-};
-console.log(myCountry);
+// let myCountry = {
+//   country: "india",
+//   capital: "NewDelhi",
+//   language: "Hindi",
+//   population: "1500M",
+//   neighbours: [
+//     "China",
+//     "Afghanistan",
+//     "Pakistan",
+//     "SriLanka",
+//     "Bangladesh",
+//     "Myanmar",
+//     "Bhutan",
+//     "Nepal",
+//   ],
+// };
+// console.log(myCountry);
 // ***** solving End *****
 
 // ***** solving Start *****
 // LECTURE: Dot vs. Bracket Notation
 // 1. Usingtheobjectfromthepreviousassignment,logastringlikethistothe console: 'Finland has 6 million finnish-speaking people, 3 neighbouring countries and a capital called Helsinki.'
+// let myCountry = {
+//   country: "india",
+//   capital: "NewDelhi",
+//   language: "Hindi",
+//   population: 1500,
+//   neighbours: [
+//     "China",
+//     "Afghanistan",
+//     "Pakistan",
+//     "SriLanka",
+//     "Bangladesh",
+//     "Myanmar",
+//     "Bhutan",
+//     "Nepal",
+//   ],
+// };
+// console.log(
+//   `${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`
+// );
+
 // 2. Increasethecountry'spopulationbytwomillionusingdotnotation,andthen decrease it by two million using brackets notation.
+
+// myCountry.population = myCountry.population + 2;
+// myCountry.population += 2;
+// console.log(myCountry);
+
+// myCountry["population"] -= 2;
+// console.log(myCountry);
+
+// ***** solving End *****
+
+// ***** solving Start *****
+
+// LECTURE: Object Methods
+// 1. Addamethodcalled'describe'tothe'myCountry'object.Thismethod will log a string to the console, similar to the string logged in the previous assignment, but this time using the 'this' keyword.
+// let myCountry = {
+//   country: "india",
+//   capital: "NewDelhi",
+//   language: "Hindi",
+//   population: 1500,
+//   neighbours: [
+//     "China",
+//     "Afghanistan",
+//     "Pakistan",
+//     "SriLanka",
+//     "Bangladesh",
+//     "Myanmar",
+//     "Bhutan",
+//     "Nepal",
+//   ],
+//   describe: function () {
+//     console.log(
+//       `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`
+//     );
+//   },
+//   checkIsland: function () {
+//     this.isIsland = this.neighbours.length === 0 ? true : false;
+//     // this.isIsland = !Boolean(this.neighbours.length);
+//   },
+// };
+// 2. Callthe'describe'method
+// myCountry.describe();
+// 3. Addamethodcalled'checkIsland'tothe'myCountry'object.This
+// method will set a new property on the object, called 'isIsland'. 'isIsland' will be true if there are no neighbouring countries, and false if there are. Use the ternary operator to set the property.
+// myCountry.checkIsland();
+
+// console.log(myCountry);
+// ***** solving End *****
+
+// ***** solving Start *****
+
+// LECTURE: Iteration: The for Loop
+// 1. Thereareelectionsinyourcountry!Inasmalltown,thereareonly50voters. Use a for loop to simulate the 50 people voting, by logging a string like this to the console (for numbers 1 to 50): 'Voter number 1 is currently voting'
+
+// let totalVoters = 50;
+// for (let i = 1; i <= totalVoters; i++) {
+//   console.log(`Voter number ${i} is currently voting`);
+// }
+// console.log(`first`);
+
+// ***** solving End *****
+
+// ***** solving Start *****
+
+// LECTURE: Looping Arrays, Breaking and Continuing
+// 1. Let'sbringbackthe'populations'arrayfromapreviousassignment
+// const populations = [1500, 250, 110, 200];
+// 2. Use a for loop to compute an array called 'percentages2' containing the
+// percentages of the world population for the 4 population values. Use the
+// function 'percentageOfWorld1' that you created earlier
+
+// function percentageOfWorld1(countryPapulation) {
+//   return (countryPapulation / 7900) * 100;
+// }
+// let percentages2 = [];
+// for (let i = 0; i < populations.length; i++) {
+//   let percentagesVal = percentageOfWorld1(populations[i]);
+//   percentages2.push(percentagesVal);
+// }
+// console.log(percentages2);
+
+// 3. Confirmthat'percentages2'containsexactlythesamevaluesasthe
+// 'percentages' array that we created manually in the previous assignment, and reflect on how much better this solution is
+// ans:- this solution is more better than previous
+// ***** solving End *****
+
+// ***** solving Start *****
+// LECTURE: Looping Backwards and Loops in Loops
+// 1. Storethisarrayofarraysintoavariablecalled'listOfNeighbours' [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
+// const listOfNeighbours = [
+//   ["Canada", "Mexico"],
+//   ["Spain"],
+//   ["Norway", "Sweden", "Russia"],
+// ];
+// 2. Logonlytheneighbouringcountriestotheconsole,onebyone,nottheentire arrays. Log a string like 'Neighbour: Canada' for each country
+// const listOfNeighbours = [
+//   ["Canada", "Mexico"],
+//   ["Spain"],
+//   ["Norway", "Sweden", "Russia"],
+// ];
+// for (let i = 0; i < listOfNeighbours.length; i++)
+//   for (let y = 0; y < listOfNeighbours[i].length; y++)
+//     console.log(`Neighbour: ${listOfNeighbours[i][y]}`);
+
+// 3. Youwillneedaloopinsidealoopforthis.Thisisactuallyabittricky,sodon't worry if it's too difficult for you! But you can still try to figure this out anyway !
+
+// ans:- like as :-
+// const data = [["Canada", "Mexico"], ["Spain"], ["Norway", "Sweden", "Russia"]];
+// const data1 = data.flat();
+// data1.forEach((item) => console.log(`Neighbour:${item}`));
+// console.log(data1);
+
+// ***** solving End *****
+
+// ***** solving Start *****
+
+// LECTURE: The while Loop
+// 1. Recreatethechallengefromthelecture'LoopingArrays,BreakingandContinuing', but this time using a while loop (call the array 'percentages3')
+
+// const populations = [1500, 250, 110, 200];
+
+// function percentageOfWorld1(countryPapulation) {
+//   return (countryPapulation / 7900) * 100;
+// }
+// let percentages3 = [];
+// let i = 0;
+// while (i < populations.length) {
+//   let percentagesVal = percentageOfWorld1(populations[i]);
+//   percentages3.push(percentagesVal);
+//   i++;
+// }
+// console.log(percentages3);
+
+// 2. Reflectonwhatsolutionyoulikebetterforthistask:theforlooporthewhile loop?
+// ans:- while loop is better here
 
 // ***** solving End *****
