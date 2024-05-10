@@ -136,3 +136,18 @@
 
 // console.log(firstElement);
 // Expected output: 1
+
+// Q let
+var wizards = ["Merlin", "Gandalf", "Radagast"];
+const items = ["Spellbook", "Staff", "Urchins", "Pinecones"];
+items[0] = "rakeshs";
+
+for (var item of wizards) {
+  console.log(1, item);
+
+  for (var item of items) {
+    console.log(item);
+  }
+
+  console.log(2, item);
+}

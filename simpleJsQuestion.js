@@ -598,3 +598,23 @@
 // console.log(mapMethod);
 // console.log(forEachMethod);
 // console.log(array);
+
+// Q flat array
+
+// function flatArray(arr) {
+//   let newArray = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (Array.isArray(arr[i])) {
+//       newArray = newArray.concat(flatArray(arr[i]));
+//     } else {
+//       newArray.push(arr[i]);
+//     }
+//   }
+//   return newArray;
+// }
+
+// const arr = [1, 2, 3, [4, [5, 6, 8]], 7, 35];
+
+// const flat = flatArray(arr);
+
+// console.log(flat);
